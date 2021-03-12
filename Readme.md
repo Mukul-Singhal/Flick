@@ -1,1 +1,3 @@
-#Flick (A video service Platform)
+# Flick 📷
+
+A video service Platform Like Youtube 📹
