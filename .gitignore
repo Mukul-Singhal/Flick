@@ -1,0 +1,9 @@
+# For node_modules
+node_modules
+
+# for package dependecies
+package-lock.json
+
+
+# For all the environment variables
+.env

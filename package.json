@@ -1,0 +1,11 @@
+{
+  "name": "flick",
+  "version": "1.0.0",
+  "description": "A video service Platform",
+  "main": "index.js",
+  "author": "Mukul Singhal",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
