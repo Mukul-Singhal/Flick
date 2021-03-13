@@ -2,6 +2,11 @@ import express from "express";
 import morgan from "morgan";
 import helmet from "helmet";
 import cookieParser from "cookie-parser";
+import userRouter from "./routers/userRouter";
+import videoRouter from "./routers/videoRouter";
+import globalRouter from "./routers/globalRouter";
+
+import routes from "./routes";
 // import bodyParser from "body-parser";
 
 const app = express();
@@ -13,11 +18,8 @@ app.use(express.urlencoded({ extended: true }));
 app.use(helmet());
 app.use(morgan("dev"));
 
-app.get("/", function (req, res) {
-  res.send("Initiate a Server");
-});
-app.get("/user", function (req, res) {
-  res.send("getting a post request");
-});
+app.use(routes.home, globalRouter);
+app.use(routes.videos, videoRouter);
+app.use(routes.user, userRouter);
 
 export default app;
