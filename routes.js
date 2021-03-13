@@ -1,6 +1,6 @@
 //Global Variables
 
-const HOME = "/home";
+const HOME = "/";
 const JOIN = "/join";
 const LOGOUT = "/logout";
 const LOGIN = "/login";
